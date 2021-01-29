@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+
+body {
+    background-image: url("./images/bg-pattern.svg");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    width: auto;
+    font-family: 'Manrope', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: hsl(230, 100%, 99%);
+    font-size: 15px;
+    color: hsl(225, 20%, 60%);
+    height: 100vh;
+    overflow:hidden
+}
+
+
+
+.main {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 100vh;
+    position: relative;
+}
+
+.bio {
+    display: block;
+    text-align: center;
+    margin: 5rem;
+    position: relative;
+    z-index: 3;
+}
+
+.bubbles {
+    position: absolute;
+    top: 30px
+}
+
+.bio .title {
+    font-size: 28px;
+    font-weight: 800;
+    color: hsl(227, 35%, 25%);
+}
+
+.bio .description {
+    font-weight: 600;
+}
+
+.box {
+    background-color: white;
+    border: solid 0.1px white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 40px 0px hsl(226, 100%, 87%)
+}
+
+.wrapper {
+    padding: 1rem 1.5rem;
+}
+
+.page-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1.4rem 1.4rem 0px;
+    margin: 1rem;
+    
+}
+
+.pageviewer-area {
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+
+    align-self: self-start;
+}
+
+.the-price {
+    position: absolute;
+    right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.number-price {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: hsl(227, 35%, 25%);
+}
+
+.month {
+    font-weight: 600;
+    margin-left: 4px;
+    letter-spacing: 1px;
+}
+
+
+
+
+input[type=range] {
+    width: 100%;
+    border: none!important;
+    margin: 40px auto;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    background-color: #7DE7D9; 
+    border: none!important;
+  }
+  
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none!important;
+  }
+  
+  input[type=range]:focus {
+    outline: none; 
+    border: none!important;
+  }
+
+
+
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    background-color:hsl(174, 86%, 45%);
+    background-image: url('./images/icon-slider.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    border: none;
+    transform: translateY(-15px);
+    box-shadow:
+    0px 10px 40px 3px #0ff,  /* inner white */
+    0 0 100px 6px #fff /* middle magenta */
+  }
+
+
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+   
+    cursor: pointer;
+    background:hsl(174, 77%, 80%);
+    border-radius: 1.3px;
+    border: none!important;
+  }
+  
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: hsl(174, 86%, 45%);
+    border: none!important;
+  }
+
+
+
+
+.billing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin: 30px auto;
+}
+
+.billing p {
+    font-weight: 500;
+}
+
+.discount {
+    position: absolute;
+    right: 5%;
+    font-size: 0.8rem;
+    background-color: hsl(14, 92%, 95%);
+    border-radius: 50px;
+    color: hsl(15, 100%, 70%);
+    font-weight: 600;
+    padding: 10px;
+    opacity: 0.2;
+}
+
+.discount-clicked {
+    transition: 0.3s ease;
+    opacity: 1;
+}
+
+
+.checker-area {
+    width: 3rem;
+    height: 1.5rem;
+    background-color: hsl(225, 20%, 60%);
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.checker-area-clicked {
+    background-color: #7DE7D9;
+}
+
+.checker-ball {
+    transition: 0.4s ease;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0px 5px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.checker-ball-new {
+    transform: translateX(100%);
+}
+
+
+  .benefits-and-enter {
+    border-top: solid 2px #F6FAFA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .benefits-and-enter ul {
+      display: block;
+      list-style-image: url("./images/icon-check.svg");
+  }
+
+  .benefits-and-enter li {
+    font-weight: 600;
+  }
+
+  .submiter {
+      margin-right: 20px;
+  }
+
+  .submiter button {
+    background-color: #293455;
+    color: hsl(225, 20%, 80%);
+    padding: 17px 45px;
+    border: none;
+    border-radius: 40px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+
+  .submiter button:hover {
+    transition: all 0.5s ease;
+    background-color: hsl(174, 86%, 45%);
+    color: black;
+  }
+
+  .attribution {
+    text-align: center;
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.3;
+    text-transform: lowercase;
+    color: #ccc
+  }
+
+  .attribution a {
+      text-decoration: none;
+      color: #ccc
+  }
+
+  @media (max-width:480px) {
+
+    body {
+        font-size: 13px;
+    }
+
+    .main {
+        width: 98%;
+    }
+
+    .bio {
+        margin: 3rem;
+    }
+
+    .bio .title {
+        font-size: 20px;
+    }
+
+    .page-price {
+        display: block;
+    }
+
+    .pageviewer-area {
+        text-align: center;
+    }
+
+    .the-price {
+        position: initial;    
+        text-align: center; 
+        width: 90%;
+        margin: 30px auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .number-price {
+        font-size: 30px
+    }
+
+
+
+    .billing {
+        width: 70%
+    }
+
+    .discount {
+        padding: 3px;
+        right: 3%
+    }
+
+    .discount span {
+        display: none;
+    }
+
+    .benefits-and-enter {
+        flex-direction: column;
+    }
+
+    .benefits {
+        width: 100%;
+    }
+
+    .benefits li {
+        text-align: center;
+    margin-top: 10px;
+    }
+
+
+    .submiter {
+        margin: 20px;
+    }
+
+
+  }
